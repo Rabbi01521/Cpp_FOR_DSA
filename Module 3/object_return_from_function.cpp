@@ -1,0 +1,31 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+class Student
+{
+public:
+    int roll;
+    int cls;
+    double gpa;
+
+    Student(int roll, int cls, double gpa) // constructor
+    {
+        this->roll = roll;
+        this->cls = cls;
+        this->gpa = gpa;
+    }
+};
+
+Student fun(){ // function that returns an object
+    Student karim(2,5,5.00);
+    return karim;
+}
+
+int main()
+{
+    Student karim = fun(); // object return from function
+    
+    cout << karim.roll << " " << karim.cls << " " << karim.gpa << endl;
+
+    return 0;
+}
