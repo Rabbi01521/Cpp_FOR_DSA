@@ -22,6 +22,8 @@ int main()
 
         ans[j] = '\0';
 
+        // cout << ans << endl;
+
         // sort characters
         sort(ans, ans + j);
 
